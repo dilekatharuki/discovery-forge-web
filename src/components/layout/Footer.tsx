@@ -1,0 +1,44 @@
+import { Link } from "react-router-dom";
+import { Mail, MapPin, Brain } from "lucide-react";
+
+const Footer = () => (
+  <footer className="mt-24 border-t border-border bg-secondary/40">
+    <div className="container py-12 grid gap-8 md:grid-cols-3">
+      <div>
+        <div className="flex items-center gap-2 font-display font-bold text-foreground mb-3">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-accent text-primary-foreground">
+            <Brain className="h-4 w-4" />
+          </span>
+          AITS Research
+        </div>
+        <p className="text-sm text-muted-foreground max-w-xs">
+          An Agentic AI-Driven Adaptive Intelligent Tutoring System combining
+          reinforcement learning, emotion-aware vision and RAG.
+        </p>
+      </div>
+      <div>
+        <h4 className="font-semibold text-foreground mb-3">Quick Links</h4>
+        <ul className="space-y-2 text-sm text-muted-foreground">
+          <li><Link to="/domain" className="hover:text-primary">Domain & Methodology</Link></li>
+          <li><Link to="/milestones" className="hover:text-primary">Milestones</Link></li>
+          <li><Link to="/documents" className="hover:text-primary">Documents</Link></li>
+          <li><Link to="/about" className="hover:text-primary">About Us</Link></li>
+        </ul>
+      </div>
+      <div>
+        <h4 className="font-semibold text-foreground mb-3">Contact</h4>
+        <ul className="space-y-2 text-sm text-muted-foreground">
+          <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0" />SLIIT, Malabe, Sri Lanka</li>
+          <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 shrink-0" />it22915818@my.sliit.lk</li>
+        </ul>
+      </div>
+    </div>
+    <div className="border-t border-border py-4">
+      <p className="container text-xs text-muted-foreground text-center">
+        © {new Date().getFullYear()} AITS Research Group · SLIIT Faculty of Computing
+      </p>
+    </div>
+  </footer>
+);
+
+export default Footer;

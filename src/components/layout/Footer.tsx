@@ -6,7 +6,7 @@ const scrollTo = (id: string) => {
 };
 
 const Footer = () => (
-  <footer className="mt-24 border-t border-border bg-secondary/40">
+  <footer className="border-t border-border bg-secondary/40">
     <div className="container py-12 grid gap-8 md:grid-cols-3">
       <div>
         <div className="flex items-center gap-2 font-display font-bold text-foreground mb-3">

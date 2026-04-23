@@ -1,8 +1,12 @@
-import { Link } from "react-router-dom";
 import { Mail, MapPin, Brain } from "lucide-react";
 
+const scrollTo = (id: string) => {
+  const el = document.getElementById(id);
+  if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 64, behavior: "smooth" });
+};
+
 const Footer = () => (
-  <footer className="mt-24 border-t border-border bg-secondary/40">
+  <footer className="border-t border-border bg-secondary/40">
     <div className="container py-12 grid gap-8 md:grid-cols-3">
       <div>
         <div className="flex items-center gap-2 font-display font-bold text-foreground mb-3">
@@ -19,10 +23,10 @@ const Footer = () => (
       <div>
         <h4 className="font-semibold text-foreground mb-3">Quick Links</h4>
         <ul className="space-y-2 text-sm text-muted-foreground">
-          <li><Link to="/domain" className="hover:text-primary">Domain & Methodology</Link></li>
-          <li><Link to="/milestones" className="hover:text-primary">Milestones</Link></li>
-          <li><Link to="/documents" className="hover:text-primary">Documents</Link></li>
-          <li><Link to="/about" className="hover:text-primary">About Us</Link></li>
+          <li><button onClick={() => scrollTo("domain")} className="hover:text-primary">Domain & Methodology</button></li>
+          <li><button onClick={() => scrollTo("milestones")} className="hover:text-primary">Milestones</button></li>
+          <li><button onClick={() => scrollTo("documents")} className="hover:text-primary">Documents</button></li>
+          <li><button onClick={() => scrollTo("about")} className="hover:text-primary">About Us</button></li>
         </ul>
       </div>
       <div>

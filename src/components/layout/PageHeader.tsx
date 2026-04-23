@@ -5,19 +5,16 @@ interface Props {
 }
 
 const PageHeader = ({ eyebrow, title, description }: Props) => (
-  <section className="bg-gradient-hero text-primary-foreground">
-    <div className="container py-16 md:py-20 animate-fade-in-up">
-      {eyebrow && (
-        <p className="text-sm uppercase tracking-[0.2em] text-primary-foreground/70 mb-3">
-          {eyebrow}
-        </p>
-      )}
-      <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight">{title}</h1>
-      {description && (
-        <p className="mt-4 max-w-3xl text-lg text-primary-foreground/80">{description}</p>
-      )}
-    </div>
-  </section>
+  <div className="container pt-16 pb-4 text-center">
+    {eyebrow && (
+      <p className="text-sm uppercase tracking-[0.2em] text-accent font-semibold mb-3">{eyebrow}</p>
+    )}
+    <h2 className="text-3xl md:text-4xl font-display font-bold tracking-tight text-foreground">{title}</h2>
+    <span className="block mx-auto mt-3 h-1 w-12 rounded-full bg-primary" />
+    {description && (
+      <p className="mt-4 max-w-3xl mx-auto text-base text-muted-foreground">{description}</p>
+    )}
+  </div>
 );
 
 export default PageHeader;

@@ -49,8 +49,7 @@ const Header = () => {
             <Brain className="h-5 w-5" />
           </span>
           <span className="flex flex-col items-start leading-none">
-            <span className="text-lg tracking-tight">AITS RESEARCH</span>
-            <span className="text-[10px] font-normal text-muted-foreground tracking-wider">SLIIT RESEARCH PROJECT — 2025</span>
+            <span className="text-lg tracking-tight">Edusynth</span>
           </span>
         </button>
         <nav className="hidden lg:flex items-center gap-1">

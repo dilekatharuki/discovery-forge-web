@@ -37,11 +37,6 @@ const Footer = () => (
         </ul>
       </div>
     </div>
-    <div className="border-t border-border py-4">
-      <p className="container text-xs text-muted-foreground text-center">
-        © {new Date().getFullYear()} AITS Research Group · SLIIT Faculty of Computing
-      </p>
-    </div>
   </footer>
 );
 

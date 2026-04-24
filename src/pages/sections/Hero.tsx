@@ -53,7 +53,7 @@ const Hero = () => (
     </div>
 
     {/* How AITS Works */}
-    <div className="bg-background py-16">
+    <div className="bg-blue-50 py-16">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">How AITS Works</h2>

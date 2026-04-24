@@ -2,17 +2,40 @@ import PageHeader from "@/components/layout/PageHeader";
 import { FileText, Download, Clock } from "lucide-react";
 
 const docs = [
-  { name: "Project Charter", desc: "Initial project scope, stakeholders and deliverables.", status: "available" },
-  { name: "Proposal Document", desc: "Full proposal covering problem, objectives, methodology and timeline.", status: "available" },
-  { name: "Status Document I", desc: "Mid-progress status report following PP1.", status: "available" },
-  { name: "Status Document II", desc: "Status report following PP2.", status: "pending" },
-  { name: "Final Thesis (Main)", desc: "Combined final thesis document for the group.", status: "pending" },
-  { name: "Final Thesis — B.A.T. Dilshan", desc: "Individual final document — Reinforcement Learning component.", status: "pending" },
-  { name: "Final Thesis — L.B.S. Kaushalya", desc: "Individual final document — Engagement Detection component.", status: "pending" },
-  { name: "Final Thesis — D.T. Gunawardena", desc: "Individual final document — Agentic AI Planning component.", status: "pending" },
-  { name: "Final Thesis — A.C. Kuruppuarachchi", desc: "Individual final document — RAG Content Generation component.", status: "pending" },
-  { name: "Research Paper", desc: "IEEE-format research paper.", status: "available" },
-  { name: "Logbook", desc: "Weekly meeting logbook with supervisor and co-supervisor.", status: "available" },
+  {
+    name: "Topic Assessment",
+    desc: "Initial project scope, stakeholders and deliverables.",
+    status: "available",
+    url: "https://drive.google.com/file/d/1524GndEXKvKF0JPbR0-11di3iDZD9xQb/view?usp=sharing"
+  },
+  {
+    name: "Project Charter",
+    desc: "Initial project scope, stakeholders and deliverables.",
+    status: "available",
+    url: "https://drive.google.com/file/d/1-wJkgGR60sMJmAVTXb0mJI1vMybLDYKx/view?usp=sharing"
+  },
+  {
+    name: "Proposal Documents",
+    desc: "Full proposal covering problem, objectives, methodology and timeline.",
+    status: "available",
+    url: "https://drive.google.com/drive/folders/1ZNezTvySqtsSjtZRYm3n0zgZlQE4EBJm?usp=sharing"
+  },
+  {
+    name: "Checklist Documents",
+    desc: "Group-specific checklist documents.",
+    status: "available",
+    url: "https://drive.google.com/drive/folders/1p8aL_wEgi6raNOAwJoTaD3cKh1cDcyy2?usp=sharing"
+  },
+  {
+    name: "Final Report",
+    desc: "Combined final thesis document for the group.",
+    status: "pending"
+  },
+  {
+    name: "Research Paper",
+    desc: "IEEE-format research paper.",
+    status: "pending"
+  },
 ];
 
 const Documents = () => (
@@ -38,14 +61,21 @@ const Documents = () => (
                 <h3 className="font-display font-semibold text-foreground">{d.name}</h3>
                 <p className="text-sm text-muted-foreground mt-1">{d.desc}</p>
               </div>
-              <button
-                disabled={!available}
-                className={`flex items-center gap-1 text-sm font-medium shrink-0 ${
-                  available ? "text-accent hover:text-primary" : "text-muted-foreground cursor-not-allowed"
-                }`}
-              >
-                {available ? <><Download className="h-4 w-4" /> View</> : <><Clock className="h-4 w-4" /> Pending</>}
-              </button>
+              {d.url ? (
+                <a
+                  href={d.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-sm font-medium shrink-0 text-accent hover:text-primary"
+                  title={`Download or view ${d.name}`}
+                >
+                  <Download className="h-4 w-4" /> View
+                </a>
+              ) : (
+                <span className="flex items-center gap-1 text-sm font-medium shrink-0 text-muted-foreground cursor-not-allowed">
+                  <Clock className="h-4 w-4" /> Pending
+                </span>
+              )}
             </div>
           );
         })}

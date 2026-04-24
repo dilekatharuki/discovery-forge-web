@@ -20,7 +20,7 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <div className="bg-blue-50 min-h-screen">
       <PageHeader
         eyebrow="Contact"
         title="Get in Touch"
@@ -79,7 +79,7 @@ const Contact = () => {
           </Button>
         </form>
       </section>
-    </>
+    </div>
   );
 };
 

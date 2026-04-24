@@ -44,7 +44,7 @@ const milestones = [
 ];
 
 const Milestones = () => (
-  <>
+  <div className="bg-blue-50 min-h-screen">
     <PageHeader
       eyebrow="Milestones"
       title="Project Milestones & Assessments"
@@ -72,7 +72,7 @@ const Milestones = () => (
         ))}
       </Accordion>
     </section>
-  </>
+  </div>
 );
 
 export default Milestones;

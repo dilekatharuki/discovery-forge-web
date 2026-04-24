@@ -2,14 +2,33 @@ import PageHeader from "@/components/layout/PageHeader";
 import { Presentation, Download, Clock } from "lucide-react";
 
 const slides = [
-  { name: "Proposal Presentation", date: "Week 4", status: "available" },
-  { name: "Progress Presentation 1", date: "Week 10", status: "available" },
-  { name: "Progress Presentation 2", date: "Week 18", status: "pending" },
-  { name: "Final Presentation", date: "Week 24", status: "pending" },
+  {
+    name: "Proposal Presentation",
+    date: "Week 4",
+    status: "available",
+    url: "https://docs.google.com/presentation/d/1xuzEcIZqIo5RfaPmqAn8yJrXO52uc7wW/edit?usp=sharing&ouid=111241369680179771674&rtpof=true&sd=true"
+  },
+  {
+    name: "Progress Presentation 1",
+    date: "Week 10",
+    status: "available",
+    url: "https://docs.google.com/presentation/d/1SX9cHLXUHDonjAgsfnvvZgWQ4STUrH0k/edit?usp=sharing&ouid=111241369680179771674&rtpof=true&sd=true"
+  },
+  {
+    name: "Progress Presentation 2",
+    date: "Week 18",
+    status: "available",
+    url: "https://docs.google.com/presentation/d/14GHuraumcJ7GQUpV7j-XqYwpxjtFN61u/edit?usp=sharing&ouid=111241369680179771674&rtpof=true&sd=true"
+  },
+  {
+    name: "Final Presentation",
+    date: "Week 24",
+    status: "pending"
+  },
 ];
 
 const Presentations = () => (
-  <>
+  <div className="bg-blue-50 min-h-screen">
     <PageHeader
       eyebrow="Presentations"
       title="Presentation Slides"
@@ -26,20 +45,27 @@ const Presentations = () => (
               </span>
               <h3 className="font-display font-semibold text-foreground">{s.name}</h3>
               <p className="text-sm text-muted-foreground mt-1">{s.date}</p>
-              <button
-                disabled={!available}
-                className={`mt-4 inline-flex items-center gap-2 text-sm font-medium ${
-                  available ? "text-accent hover:text-primary" : "text-muted-foreground cursor-not-allowed"
-                }`}
-              >
-                {available ? <><Download className="h-4 w-4" /> Download Slides</> : <><Clock className="h-4 w-4" /> Coming soon</>}
-              </button>
+              {s.url ? (
+                <a
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-primary"
+                  title={`View ${s.name}`}
+                >
+                  <Download className="h-4 w-4" /> Download Slides
+                </a>
+              ) : (
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground cursor-not-allowed">
+                  <Clock className="h-4 w-4" /> Coming soon
+                </span>
+              )}
             </div>
           );
         })}
       </div>
     </section>
-  </>
+  </div>
 );
 
 export default Presentations;

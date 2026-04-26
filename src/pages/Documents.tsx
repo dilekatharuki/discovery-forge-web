@@ -69,7 +69,7 @@ const Documents = () => (
                   className="flex items-center gap-1 text-sm font-medium shrink-0 text-accent hover:text-primary"
                   title={`Download or view ${d.name}`}
                 >
-                  <Download className="h-4 w-4" /> View
+                  <Download className="h-4 w-4" /> Download
                 </a>
               ) : (
                 <span className="flex items-center gap-1 text-sm font-medium shrink-0 text-muted-foreground cursor-not-allowed">

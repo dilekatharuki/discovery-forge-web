@@ -7,39 +7,53 @@ import { Calendar, Award } from "lucide-react";
 const milestones = [
   {
     name: "Project Proposal",
-    date: "Week 4 — 2025",
-    marks: "6%",
-    details: "Initial submission outlining problem, motivation, objectives, scope and proposed methodology for the AITS research."
+    date: "September 2025",
+    marks: "12%",
+    details: "A Project Proposal is presented to potential clients to receive funding or get your project approved."
   },
   {
     name: "Progress Presentation 1 (PP1)",
-    date: "Week 10 — 2025",
+    date: "January 2026",
     marks: "15%",
-    details: "Demonstration of 50% project completion: engagement detection module and DQN training pipeline."
+    details: "Progress Presentation I reviews the 50% completetion status of the project. This reveals any gaps or inconsistencies in the"
   },
   {
     name: "Progress Presentation 2 (PP2)",
-    date: "Week 18 — 2025",
+    date: "March 2026",
     marks: "18%",
-    details: "Demonstration of 90% completion: agentic planning, RAG layer integration and end-to-end closed-loop evaluation."
+    details: "Progress Presentation II reviews the 90% completetion status demonstration of the project"
+  },
+   {
+    name: "Final Presentation & Viva",
+    date: "May 2026",
+    marks: "20%",
+    details: "Viva is held individually to assess each members contribution to the project."
   },
   {
     name: "Final Report",
-    date: "Week 22 — 2025",
+    date: "May 2026",
     marks: "19%",
     details: "Complete thesis document covering background, methodology, implementation, evaluation and discussion."
   },
-  {
-    name: "Final Presentation & Viva",
-    date: "Week 24 — 2025",
-    marks: "22%",
-    details: "Final defense including live demonstration and individual viva-voce examination."
-  },
+ 
   {
     name: "Research Paper",
-    date: "Week 26 — 2025",
+    date: "May 2026",
     marks: "10%",
-    details: "IEEE-format research paper submission documenting the proposed AITS framework and results."
+    details: "IEEE-format research paper submission documenting the proposed Edusynthframework and results."
+  },
+
+   {
+    name: "Website Evaluation",
+    date: "May 2026",
+    marks: "2%",
+    details: "Evaluation of the developed website's functionality, user experience, and performance."
+  },
+  {
+    name: "Logbook",
+    date: "May 2026",
+    marks: "4%",
+    details: "Documentation of all project activities, meetings, and progress updates."
   },
 ];
 

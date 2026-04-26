@@ -52,11 +52,11 @@ const Hero = () => (
       </div>
     </div>
 
-    {/* How AITS Works */}
+    {/* How EdusynthWorks */}
     <div className="bg-blue-50 py-16">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">How AITS Works</h2>
+          <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">How EdusynthWorks</h2>
           <span className="block mx-auto mt-2 h-1 w-12 rounded-full bg-primary" />
         </div>
         <div className="flex flex-wrap items-center justify-center gap-4 md:gap-2">

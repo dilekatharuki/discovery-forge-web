@@ -13,7 +13,7 @@ const Footer = () => (
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-accent text-primary-foreground">
             <Brain className="h-4 w-4" />
           </span>
-          AITS Research
+          EdusynthResearch
         </div>
         <p className="text-sm text-muted-foreground max-w-xs">
           An Agentic AI-Driven Adaptive Intelligent Tutoring System combining
@@ -37,6 +37,7 @@ const Footer = () => (
         </ul>
       </div>
     </div>
+
   </footer>
 );
 

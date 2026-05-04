@@ -32,8 +32,7 @@ const Hero = () => (
       <div className="container py-16 md:py-24 grid lg:grid-cols-2 gap-10 items-center animate-fade-in-up">
         <div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight text-foreground leading-[1.1]">
-            An Agentic AI-Driven<br />
-            Adaptive Intelligent<br />
+            Multimodal AI<br />
             <span className="text-primary-glow">Tutoring System</span>
           </h1>
           <p className="mt-6 max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed">

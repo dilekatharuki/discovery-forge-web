@@ -42,7 +42,6 @@ const Contact = () => {
                   id="name" 
                   name="name" 
                   required 
-                  placeholder="John Doe" 
                   className="w-full bg-background border-border" 
                 />
               </div>
@@ -56,7 +55,6 @@ const Contact = () => {
                   name="email" 
                   type="email" 
                   required 
-                  placeholder="name@example.com" 
                   className="w-full bg-background border-border" 
                 />
               </div>
@@ -69,8 +67,7 @@ const Contact = () => {
                   id="message" 
                   name="message" 
                   required 
-                  rows={6} 
-                  placeholder="Please share your inquiry or questions..." 
+                  rows={6}  
                   className="w-full bg-background border-border resize-none" 
                 />
               </div>

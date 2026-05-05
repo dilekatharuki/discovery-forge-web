@@ -34,7 +34,8 @@ const docs = [
   {
     name: "Research Paper",
     desc: "IEEE-format research paper.",
-    status: "pending"
+    status: "available",
+    url: "https://drive.google.com/file/d/1agyXCjG7DUHWQkyylvfrtJB2aARsiobs/view?usp=sharing"
   },
 ];
 

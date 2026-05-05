@@ -23,7 +23,8 @@ const slides = [
   {
     name: "Final Presentation",
     date: "Week 24",
-    status: "pending"
+    status: "available",
+    url: "https://docs.google.com/presentation/d/1u0WoOBLbBTLvKZF_BWkEjJ1P_j0qkfZP/edit?usp=sharing&ouid=111241369680179771674&rtpof=true&sd=true"
   },
 ];
 
